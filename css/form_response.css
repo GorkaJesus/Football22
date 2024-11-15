@@ -1,0 +1,141 @@
+
+
+
+/* Paleta de colores en tonos azules */
+:root {
+    --primary-blue: #004080; /* Azul oscuro profesional */
+    --secondary-blue: #66a3ff; /* Azul claro para acentos */
+    --background-blue: #f0f8ff; /* Azul muy claro para el fondo */
+    --button-blue: #007bff; /* Azul brillante para los botones */
+    --button-hover-blue: #0056b3; /* Azul más oscuro para hover en botones */
+    --text-light: #ffffff; /* Blanco para el texto sobre colores oscuros */
+    --error-color: #ff3333; /* Rojo para los mensajes de error */
+}
+
+body {
+    background-color: var(--background-blue);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--primary-blue);
+    margin: 0;
+    height: 100vh; /* Para que el cuerpo cubra toda la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form {
+    padding: 1em;
+}
+
+form-signup {
+    margin-top: 2em;
+}
+
+/* Estilo para los labels */
+label {
+    font-weight: bold;
+    color: var(--primary-blue);
+}
+
+/* Estilo para los inputs */
+input[type="text"],
+input[type="password"] {
+    border: 2px solid var(--primary-blue);
+    border-radius: 5px;
+    padding: 0.5em;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: var(--secondary-blue);
+    box-shadow: 0 0 5px var(--secondary-blue);
+}
+
+/* Estilo para los botones */
+button {
+    background-color: var(--button-blue);
+    color: var(--text-light);
+    border: none;
+    padding: 0.7em 1.5em;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--button-hover-blue);
+}
+
+/* Estilo para los errores */
+#error-username-required,
+#error-password-required,
+#error-password-confirm-required,
+#error-password-match-required {
+    color: var(--error-color);
+    font-size: 0.9em;
+    display: none;
+}
+
+/* Estilo para la página de respuesta */
+#my-jumbotron {
+    padding: 2em;
+    background-color: var(--primary-blue);
+    color: var(--text-light);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 2em 0; /* Añadir margen arriba y abajo */
+}
+
+#my-jumbotron h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+h1.textcenter {
+    margin: 0;
+    color: var(--text-light);
+}
+
+/* Centrado vertical para el body */
+html, body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-inicio {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--button-blue);
+    color: var(--text-light);
+    padding: 0.8em 1.2em;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-inicio:hover {
+    background-color: var(--button-hover-blue);
+}
